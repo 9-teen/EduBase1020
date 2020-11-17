@@ -26,11 +26,11 @@ namespace EduBase1020
                     WHERE S.No = '{this.txb_StuNo.Text}' 
                     AND S.Password = '{this.txb_Password.Text}';";
             SqlHelper sqlHelper = new SqlHelper();
-            int result = sqlHelper.QuickReturn<int>(commandText);
+            int result= sqlHelper.QuickReturn<int>(commandText);
             if (result == 1)
             {
                 MessageBox.Show("登录成功。");
-                frm_StudentInfo frm_StudentInfo = new frm_StudentInfo();
+                frm_StudentInfo frm_StudentInfo = new frm_StudentInfo(this.txb_StuNo.Text);
                 frm_StudentInfo.Show();
                 this.Close();
             }
