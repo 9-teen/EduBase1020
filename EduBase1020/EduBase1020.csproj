@@ -80,6 +80,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_ChangeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ChangeInfo.Designer.cs">
+      <DependentUpon>frm_ChangeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Message.Designer.cs">
+      <DependentUpon>frm_Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PersonalHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PersonalHomepage.Designer.cs">
+      <DependentUpon>frm_PersonalHomepage.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,8 +116,23 @@
     <Compile Include="frm_StudentInfo.Designer.cs">
       <DependentUpon>frm_StudentInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Notice.Designer.cs">
+      <DependentUpon>frm_Notice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_ChangeInfo.resx">
+      <DependentUpon>frm_ChangeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Message.resx">
+      <DependentUpon>frm_Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PersonalHomepage.resx">
+      <DependentUpon>frm_PersonalHomepage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_LogIn.resx">
       <DependentUpon>frm_LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_StudentInfo.resx">
       <DependentUpon>frm_StudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Notice.resx">
+      <DependentUpon>frm_Notice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
