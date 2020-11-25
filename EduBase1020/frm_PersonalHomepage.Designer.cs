@@ -119,7 +119,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "我的桌面";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // panel_Desktop
             // 

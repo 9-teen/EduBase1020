@@ -27,12 +27,11 @@ namespace EduBase1020
                 Application.Exit();
             }
         }
-
-        private void tabPage2_Click(object sender, EventArgs e)
+        public frm_PersonalHomepage(string studentno) : this()
         {
-
+            this._StudentNo = studentno;
         }
-
+        //已收公告
         private void llb_Notice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.panel_Desktop.Controls.Clear();
@@ -41,7 +40,7 @@ namespace EduBase1020
             this.panel_Desktop.Controls.Add(frm_Notice);
             frm_Notice.Show();
         }
-
+        //已收留言
         private void llb_Message_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.panel_Desktop.Controls.Clear();
