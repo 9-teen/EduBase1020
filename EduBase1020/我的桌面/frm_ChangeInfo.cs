@@ -48,7 +48,8 @@ namespace EduBase1020
             string commandText =
                 $@"UPDATE tb_ChangeInfo
                 SET No = '{this.txb_No.Text}',Name = '{this.txb_Name.Text}',Question1 = '{this.txb_Question1.Text}'
-                ,Answer1 = '{this.txb_Answer1.Text}',Question2 = '{this.txb_Question2.Text}',Answer2 = '{this.txb_Answer2.Text}'";
+                ,Answer1 = '{this.txb_Answer1.Text}',Question2 = '{this.txb_Question2.Text}',Answer2 = '{this.txb_Answer2.Text}'
+                WHERE No='{_StudentNo}';";
             SqlHelper sqlHelper = new SqlHelper();
             int rowAffected = sqlHelper.QuickSubmit(commandText);
             if (rowAffected == 1)

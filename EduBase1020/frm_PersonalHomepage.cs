@@ -49,10 +49,6 @@ namespace EduBase1020
             this.panel_Desktop.Controls.Add(frm_Message);
             frm_Message.Show();
         }
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void lkl_StudentStatusInformationManagement_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -133,6 +129,11 @@ namespace EduBase1020
             frm_OSCEscore.TopLevel = false;
             frm_OSCEscore.Controls.Add(frm_OSCEscore);
             frm_OSCEscore.Show();
+        }
+
+        private void llb_ModifyInformation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

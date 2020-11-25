@@ -81,7 +81,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(788, 414);
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabPage3_Click);
             // 
             // tabPage1
             // 
@@ -146,6 +145,7 @@
             this.llb_ModifyInformation.TabIndex = 4;
             this.llb_ModifyInformation.TabStop = true;
             this.llb_ModifyInformation.Text = "修改个人信息";
+            this.llb_ModifyInformation.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_ModifyInformation_LinkClicked);
             // 
             // lbl_personalInformation
             // 
