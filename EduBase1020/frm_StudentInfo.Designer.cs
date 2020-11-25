@@ -38,6 +38,7 @@
             this.lbl_Gender = new System.Windows.Forms.Label();
             this.lbl_BirthDate = new System.Windows.Forms.Label();
             this.lbl_Major = new System.Windows.Forms.Label();
+            this.btn_Homepage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txb_No
@@ -120,11 +121,22 @@
             this.lbl_Major.TabIndex = 9;
             this.lbl_Major.Text = "专业：";
             // 
+            // btn_Homepage
+            // 
+            this.btn_Homepage.Location = new System.Drawing.Point(303, 257);
+            this.btn_Homepage.Name = "btn_Homepage";
+            this.btn_Homepage.Size = new System.Drawing.Size(75, 23);
+            this.btn_Homepage.TabIndex = 10;
+            this.btn_Homepage.Text = "主页";
+            this.btn_Homepage.UseVisualStyleBackColor = true;
+            this.btn_Homepage.Click += new System.EventHandler(this.btn_Homepage_Click);
+            // 
             // frm_StudentInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 381);
+            this.Controls.Add(this.btn_Homepage);
             this.Controls.Add(this.lbl_Major);
             this.Controls.Add(this.lbl_BirthDate);
             this.Controls.Add(this.lbl_Gender);
@@ -155,5 +167,6 @@
         private System.Windows.Forms.Label lbl_Gender;
         private System.Windows.Forms.Label lbl_BirthDate;
         private System.Windows.Forms.Label lbl_Major;
+        private System.Windows.Forms.Button btn_Homepage;
     }
 }

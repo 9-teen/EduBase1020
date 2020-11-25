@@ -25,7 +25,10 @@ namespace EduBase1020
         }
         private void Frm_StudentInfo_FormClosed(object sender, FormClosedEventArgs e)
         {
-            throw new NotImplementedException();
+            if (Application.OpenForms.Count==0)
+            {
+                Application.Exit();
+            }
         }
 
         private void frm_StudentInfo_Load(object sender, EventArgs e)
@@ -44,6 +47,13 @@ namespace EduBase1020
                 this.txb_Gender.Text = sqlHelper["Gender"].ToString();
                 this.txb_BirthDate.Text = ((DateTime)sqlHelper["BirthDate"]).ToShortDateString();
             }
+        }
+
+        private void btn_Homepage_Click(object sender, EventArgs e)
+        {
+            frm_PersonalHomepage frm_PersonalHomepage = new frm_PersonalHomepage();
+            frm_PersonalHomepage.Show();
+            this.Close();
         }
     }
 }

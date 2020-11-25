@@ -30,8 +30,8 @@ namespace EduBase1020
             if (result == 1)
             {
                 MessageBox.Show("登录成功。");
-                frm_StudentInfo frm_StudentInfo = new frm_StudentInfo(this.txb_StuNo.Text);
-                frm_StudentInfo.Show();
+                frm_PersonalHomepage frm_PersonalHomepage = new frm_PersonalHomepage();
+                frm_PersonalHomepage.Show();
                 this.Close();
             }
             else
